@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Re:0">
 <meta property="og:description" content="简介&amp;emsp;&amp;emsp;C++中存在一种“朋友”关系：如果体现在函数上，我们称之为友元函数，如果体现在类上我们称之为友元类。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-11T15:07:49.591Z">
+<meta property="og:updated_time" content="2017-08-11T15:16:27.551Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++学习笔记（一）：友元函数和友元类">
 <meta name="twitter:description" content="简介&amp;emsp;&amp;emsp;C++中存在一种“朋友”关系：如果体现在函数上，我们称之为友元函数，如果体现在类上我们称之为友元类。">
@@ -368,34 +368,10 @@
       
         <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>&emsp;&emsp;C++中存在一种“朋友”关系：如果体现在函数上，我们称之为友元函数，如果体现在类上我们称之为友元类。<a id="more"></a>  </p>
 <h3 id="友元函数"><a href="#友元函数" class="headerlink" title="友元函数"></a>友元函数</h3><p>&emsp;&emsp;首先，来讨论一下友元函数。 友元函数分为两种：一种为定义在全局的函数，我们称之为友元全局函数，另一种定义在类中并且将这个函数，声明为另外一个类的友元函数，我们就称之为友元成员函数。    </p>
-<h5 id="友元全局函数"><a href="#友元全局函数" class="headerlink" title="友元全局函数"></a>友元全局函数</h5><p>&emsp;&emsp;先看下面一个例子：  </p>
-<pre><code>  class Time
-{
-    friend void printTime1(Time &amp;t);
-public:
-
-    Time(int hour, int min, int sec);
-private:
-
-    int m_iHour;
-    int m_iMinute;
-    int m_iSecond;
-};
-
-Time::Time(int hour, int min, int sec)
-{
-    m_iHour = hour;
-    m_iMinute = min;
-    m_iSecond = sec;
-}
-
-void printTime1(Time &amp;t)
-{
-    cout &lt;&lt; t.m_iHour &lt;&lt; &quot;:&quot; &lt;&lt; t.m_iMinute &lt;&lt; &quot;:&quot; &lt;&lt; t.m_iSecond &lt;&lt; endl;
-}
-</code></pre><p> &emsp;&emsp;此例中，printTime这个全局函数，调用了Time类中的私有成员变量，正常情况下是无法调用的，但是我们加上friend关键字后，就可以正常访问了。  </p>
+<h5 id="友元全局函数"><a href="#友元全局函数" class="headerlink" title="友元全局函数"></a>友元全局函数</h5><p>&emsp;&emsp;先看下面一个例子：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"> </div><div class="line">  <span class="class"><span class="keyword">class</span> <span class="title">Time</span></span></div><div class="line"><span class="class">&#123;</span></div><div class="line">	<span class="function"><span class="keyword">friend</span> <span class="keyword">void</span> <span class="title">printTime1</span><span class="params">(Time &amp;t)</span></span>;</div><div class="line"><span class="keyword">public</span>:</div><div class="line"></div><div class="line">	Time(<span class="keyword">int</span> hour, <span class="keyword">int</span> min, <span class="keyword">int</span> sec);</div><div class="line"><span class="keyword">private</span>:</div><div class="line"></div><div class="line">	<span class="keyword">int</span> m_iHour;</div><div class="line">	<span class="keyword">int</span> m_iMinute;</div><div class="line">	<span class="keyword">int</span> m_iSecond;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">Time::Time(<span class="keyword">int</span> hour, <span class="keyword">int</span> min, <span class="keyword">int</span> sec)</div><div class="line">&#123;</div><div class="line">	m_iHour = hour;</div><div class="line">	m_iMinute = min;</div><div class="line">	m_iSecond = sec;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">printTime1</span><span class="params">(Time &amp;t)</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">	<span class="built_in">cout</span> &lt;&lt; t.m_iHour &lt;&lt; <span class="string">":"</span> &lt;&lt; t.m_iMinute &lt;&lt; <span class="string">":"</span> &lt;&lt; t.m_iSecond &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p> &emsp;&emsp;此例中，printTime这个全局函数，调用了Time类中的私有成员变量，正常情况下是无法调用的，但是我们加上friend关键字后，就可以正常访问了。  </p>
 <p><strong>注意：</strong><code>friend void printTime1(Time &amp;t);</code>一般习惯的写在类内第一句。这是因为，一般友元会破坏封装性，写在类的最开始的位置，可以让程序员很清楚的知道哪些内容被暴露出来，减小犯错的概率。  </p>
-<h5 id="友元成员函数"><a href="#友元成员函数" class="headerlink" title="友元成员函数"></a>友元成员函数</h5><p>&emsp;&emsp;和上面的大致相同，在被访问数据类中声明<br>           <code>friend void Match：：printTime(Time&amp;t);</code>   </p>
+<h5 id="友元成员函数"><a href="#友元成员函数" class="headerlink" title="友元成员函数"></a>友元成员函数</h5><p>&emsp;&emsp;和上面的大致相同，在被访问数据类中声明<br>           ` friend void Match：：printTime(Time&amp;t);     </p>
 <h3 id="友元类"><a href="#友元类" class="headerlink" title="友元类"></a>友元类</h3><p>&emsp;&emsp;当一个类B成为了另外一个类A的“朋友”时，那么类A的私有和保护的数据成员就可以被类B访问。我们就把类B叫做类A的友元。实现方法：在类A中写下<br>    friend class B;<br>并且在类A前，先声明一下B类，以免报错。  </p>
 <p><strong>注意：</strong><br>友元关系不可传递<br>友元关系单向性<br>友元声明的形式（友元函数和友元类）及数量不受限制<br>友元只是封装的补充，破坏了封装性</p>
 
