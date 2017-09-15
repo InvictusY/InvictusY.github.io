@@ -94,13 +94,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Re:0">
-<meta property="og:url" content="http://yjjblog.site/archives/index.html">
+<meta name="description" content="手写体数据读取代码样例# 从sklearn.datasets里导入手写体数字加载器 from sklearn.datasets import load_digits # 从通过数据加载器获得手写体数字的数码图像数据并储存在digits变量中 digits = load_digits() # 检视数据规模和特征维度 print(digits.data.shape)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用支持向量机(分类)对手写体数字图像进行识别">
+<meta property="og:url" content="http://yjjblog.site/2017/09/15/使用支持向量机-分类-对手写体数字图像进行识别/index.html">
 <meta property="og:site_name" content="Re:0">
+<meta property="og:description" content="手写体数据读取代码样例# 从sklearn.datasets里导入手写体数字加载器 from sklearn.datasets import load_digits # 从通过数据加载器获得手写体数字的数码图像数据并储存在digits变量中 digits = load_digits() # 检视数据规模和特征维度 print(digits.data.shape)">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.imgur.com/qrWllnM.png">
+<meta property="og:updated_time" content="2017-09-15T03:24:29.349Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Re:0">
+<meta name="twitter:title" content="使用支持向量机(分类)对手写体数字图像进行识别">
+<meta name="twitter:description" content="手写体数据读取代码样例# 从sklearn.datasets里导入手写体数字加载器 from sklearn.datasets import load_digits # 从通过数据加载器获得手写体数字的数码图像数据并储存在digits变量中 digits = load_digits() # 检视数据规模和特征维度 print(digits.data.shape)">
+<meta name="twitter:image" content="https://i.imgur.com/qrWllnM.png">
 
 
 
@@ -129,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yjjblog.site/archives/"/>
+  <link rel="canonical" href="http://yjjblog.site/2017/09/15/使用支持向量机-分类-对手写体数字图像进行识别/"/>
 
 
 
 
 
-  <title>归档 | Re:0</title>
+  <title>使用支持向量机(分类)对手写体数字图像进行识别 | Re:0</title>
   
 
 
@@ -154,7 +160,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -248,333 +254,219 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yjjblog.site/2017/09/15/使用支持向量机-分类-对手写体数字图像进行识别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="InvictusY">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://oucdo9a26.bkt.clouddn.com/rBACE1I612iSRZYoAAAptjyOos8950_200x200_3.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Re:0">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">使用支持向量机(分类)对手写体数字图像进行识别</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-15T11:14:17+08:00">
+                2017-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 8 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习笔记</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2017/09/15/使用支持向量机-分类-对手写体数字图像进行识别/" class="leancloud_visitors" data-flag-title="使用支持向量机(分类)对手写体数字图像进行识别">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/15/使用支持向量机-分类-对手写体数字图像进行识别/" itemprop="url">
-              
-                <span itemprop="name">使用支持向量机(分类)对手写体数字图像进行识别</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-15T11:14:17+08:00"
-              content="2017-09-15" >
-          09-15
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/14/中国科学院大学国科大未选课程加入课程网站-旁听蹭课专用/" itemprop="url">
-              
-                <span itemprop="name">中国科学院大学(国科大)未选课程加入课程网站(旁听蹭课专用！！！)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-14T19:57:10+08:00"
-              content="2017-09-14" >
-          09-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/13/使用线性分类模型从事良-恶性肿瘤预测任务/" itemprop="url">
-              
-                <span itemprop="name">使用线性分类模型从事良/恶性肿瘤预测任务</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-13T23:00:14+08:00"
-              content="2017-09-13" >
-          09-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
+      
+        <h3 id="手写体数据读取代码样例"><a href="#手写体数据读取代码样例" class="headerlink" title="手写体数据读取代码样例"></a>手写体数据读取代码样例</h3><pre><code class="python"><span class="comment"># 从sklearn.datasets里导入手写体数字加载器</span>
+<span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_digits
+<span class="comment"># 从通过数据加载器获得手写体数字的数码图像数据并储存在digits变量中</span>
+digits = load_digits()
+<span class="comment"># 检视数据规模和特征维度</span>
+print(digits.data.shape)
+</code></pre>
+<a id="more"></a> 
+<h3 id="手写体数据分割代码样例"><a href="#手写体数据分割代码样例" class="headerlink" title="手写体数据分割代码样例"></a>手写体数据分割代码样例</h3><pre><code class="python"><span class="comment"># 使用sklearn.model_selection里的train_test_split模块用于分割数据</span>
+<span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split
 
-        
-        
+<span class="comment"># 随机选取75%的数据作为训练样本;其余25%的数据作为测试样本</span>
+X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target, test_size=<span class="number">0.25</span>, random_state=<span class="number">33</span>)
+<span class="comment"># 分别检视训练与测试数据规模</span>
+print(y_train.shape)
+print(y_test.shape)
+</code></pre>
+<h3 id="使用支持向量机-分类-对手写体数字图像进行识别"><a href="#使用支持向量机-分类-对手写体数字图像进行识别" class="headerlink" title="使用支持向量机(分类)对手写体数字图像进行识别"></a>使用支持向量机(分类)对手写体数字图像进行识别</h3><pre><code class="Python">
+<span class="comment"># 从sklearn,prepprocessing里导入数据标准化模块</span>
+<span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler
 
-        
+<span class="comment"># 从sklearn.svm里导入基于线性假设的支持向量机分类器LinearSVC</span>
+<span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> LinearSVC
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<span class="comment"># 从仍然需要对训练和测试的特征数据进行标准化</span>
+ss = StandardScaler()
+X_train = ss.fit_transform(X_train)
+X_test = ss.fit_transform(X_test)
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/08/一个新的篇章的开始/" itemprop="url">
-              
-                <span itemprop="name">一个新的篇章的开始</span>
-              
-            </a>
-        
-      </h2>
+<span class="comment"># 初始化线性假设的支持向量机分类器LinearSVC</span>
+lsvc = LinearSVC()
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-08T21:05:29+08:00"
-              content="2017-09-08" >
-          09-08
-        </time>
-      </div>
+<span class="comment"># 进行模型训练</span>
+lsvc.fit(X_train, y_train)
+<span class="comment"># 利用训练好的模型对测试样本的数字类别进行预测,预测结果储存在变量y_predict中</span>
+y_predict = lsvc.predict(X_test)
+</code></pre>
+<h3 id="支持向量机-分类-模型对手写体数码图像识别能力的评估"><a href="#支持向量机-分类-模型对手写体数码图像识别能力的评估" class="headerlink" title="支持向量机(分类)模型对手写体数码图像识别能力的评估"></a>支持向量机(分类)模型对手写体数码图像识别能力的评估</h3><pre><code class="python">
+<span class="comment"># 使用模型自带的评估函数进行准确性测评</span>
+<span class="keyword">print</span> <span class="string">'The Accuracy of Linear SVC is'</span>, lsvc.score(X_test, y_test)
 
-    </header>
-  </article>
-
-
+<span class="comment"># 依然使用sklearn.metrics里面的classification_report模块对预测结果做更加详细的分析</span>
+<span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> classification_report
+<span class="keyword">print</span> classification_report(y_test, y_predict, target_names=digits.target_names.astype(str))
+</code></pre>
+<h3 id="输出结果"><a href="#输出结果" class="headerlink" title="输出结果"></a>输出结果</h3><p><img src="https://i.imgur.com/qrWllnM.png" alt="">   </p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/15/Python基础及其数学库的使用/" itemprop="url">
-              
-                <span itemprop="name">Python基础及其数学库的使用</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-15T12:03:31+08:00"
-              content="2017-08-15" >
-          08-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/10/C-学习笔记（一）：友元函数和友元类/" itemprop="url">
-              
-                <span itemprop="name">C++学习笔记（一）：友元函数和友元类</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-10T22:18:01+08:00"
-              content="2017-08-10" >
-          08-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/09/Linux下的系统编程与网络编程大纲/" itemprop="url">
-              
-                <span itemprop="name">Linux下的系统编程与网络编程大纲</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-09T15:25:53+08:00"
-              content="2017-08-09" >
-          08-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/08/韶华易逝-理想永存/" itemprop="url">
-              
-                <span itemprop="name">韶华易逝,理想永存</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-08-08T22:53:04+08:00"
-              content="2017-08-08" >
-          08-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/14/中国科学院大学国科大未选课程加入课程网站-旁听蹭课专用/" rel="next" title="中国科学院大学(国科大)未选课程加入课程网站(旁听蹭课专用！！！)">
+                <i class="fa fa-chevron-left"></i> 中国科学院大学(国科大)未选课程加入课程网站(旁听蹭课专用！！！)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -582,6 +474,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -602,8 +498,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://oucdo9a26.bkt.clouddn.com/rBACE1I612iSRZYoAAAptjyOos8950_200x200_3.jpg"
@@ -669,6 +574,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#手写体数据读取代码样例"><span class="nav-number">1.</span> <span class="nav-text">手写体数据读取代码样例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#手写体数据分割代码样例"><span class="nav-number">2.</span> <span class="nav-text">手写体数据分割代码样例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用支持向量机-分类-对手写体数字图像进行识别"><span class="nav-number">3.</span> <span class="nav-text">使用支持向量机(分类)对手写体数字图像进行识别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支持向量机-分类-模型对手写体数码图像识别能力的评估"><span class="nav-number">4.</span> <span class="nav-text">支持向量机(分类)模型对手写体数码图像识别能力的评估</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出结果"><span class="nav-number">5.</span> <span class="nav-text">输出结果</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -810,11 +731,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
 
 
   
