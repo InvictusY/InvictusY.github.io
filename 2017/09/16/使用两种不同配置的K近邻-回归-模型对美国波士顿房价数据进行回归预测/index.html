@@ -94,17 +94,19 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;我写过一篇同一个题目的日志，那个时候我的大一生活刚结束。今天想来想去，还是继续用这个题目作为我博客开张的第一篇博文。">
+<meta name="description" content="对美国波士顿地区房价数据进行预处理# 从sklearn.datasets导入波士顿房价数据读取器 from sklearn.datasets import load_boston # 从读取房价数据存储在变量boston中 boston = load_boston() # 输出数据描述 print boston.DESCR">
 <meta property="og:type" content="article">
-<meta property="og:title" content="韶华易逝,理想永存">
-<meta property="og:url" content="http://yjjblog.site/2017/08/08/韶华易逝-理想永存/index.html">
+<meta property="og:title" content="使用两种不同配置的K近邻(回归)模型对美国波士顿房价数据进行回归预测">
+<meta property="og:url" content="http://yjjblog.site/2017/09/16/使用两种不同配置的K近邻-回归-模型对美国波士顿房价数据进行回归预测/index.html">
 <meta property="og:site_name" content="Re:0">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;我写过一篇同一个题目的日志，那个时候我的大一生活刚结束。今天想来想去，还是继续用这个题目作为我博客开张的第一篇博文。">
+<meta property="og:description" content="对美国波士顿地区房价数据进行预处理# 从sklearn.datasets导入波士顿房价数据读取器 from sklearn.datasets import load_boston # 从读取房价数据存储在变量boston中 boston = load_boston() # 输出数据描述 print boston.DESCR">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-11T09:13:26.297Z">
+<meta property="og:image" content="https://i.imgur.com/5uA3Chs.png">
+<meta property="og:updated_time" content="2017-09-16T07:34:59.500Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="韶华易逝,理想永存">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp;我写过一篇同一个题目的日志，那个时候我的大一生活刚结束。今天想来想去，还是继续用这个题目作为我博客开张的第一篇博文。">
+<meta name="twitter:title" content="使用两种不同配置的K近邻(回归)模型对美国波士顿房价数据进行回归预测">
+<meta name="twitter:description" content="对美国波士顿地区房价数据进行预处理# 从sklearn.datasets导入波士顿房价数据读取器 from sklearn.datasets import load_boston # 从读取房价数据存储在变量boston中 boston = load_boston() # 输出数据描述 print boston.DESCR">
+<meta name="twitter:image" content="https://i.imgur.com/5uA3Chs.png">
 
 
 
@@ -133,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://yjjblog.site/2017/08/08/韶华易逝-理想永存/"/>
+  <link rel="canonical" href="http://yjjblog.site/2017/09/16/使用两种不同配置的K近邻-回归-模型对美国波士顿房价数据进行回归预测/"/>
 
 
 
 
 
-  <title>韶华易逝,理想永存 | Re:0</title>
+  <title>使用两种不同配置的K近邻(回归)模型对美国波士顿房价数据进行回归预测 | Re:0</title>
   
 
 
@@ -266,7 +268,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yjjblog.site/2017/08/08/韶华易逝-理想永存/">
+    <link itemprop="mainEntityOfPage" href="http://yjjblog.site/2017/09/16/使用两种不同配置的K近邻-回归-模型对美国波士顿房价数据进行回归预测/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="InvictusY">
@@ -283,7 +285,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">韶华易逝,理想永存</h1>
+          <h1 class="post-title" itemprop="name headline">使用两种不同配置的K近邻(回归)模型对美国波士顿房价数据进行回归预测</h1>
         
 
         <div class="post-meta">
@@ -295,8 +297,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-08T22:53:04+08:00">
-                2017-08-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-16T15:25:50+08:00">
+                2017-09-16
               </time>
             
 
@@ -318,8 +320,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/机器学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习笔记</span>
                   </a>
                 </span>
 
@@ -335,7 +337,7 @@
 
           
           
-             <span id="/2017/08/08/韶华易逝-理想永存/" class="leancloud_visitors" data-flag-title="韶华易逝,理想永存">
+             <span id="/2017/09/16/使用两种不同配置的K近邻-回归-模型对美国波士顿房价数据进行回归预测/" class="leancloud_visitors" data-flag-title="使用两种不同配置的K近邻(回归)模型对美国波士顿房价数据进行回归预测">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -366,7 +368,70 @@
       
 
       
-        <p>&emsp;&emsp;我写过一篇同一个题目的日志，那个时候我的大一生活刚结束。今天想来想去，还是继续用这个题目作为我博客开张的第一篇博文。 <a id="more"></a><br>&emsp;&emsp;一直想建一个博客来记录自己的生活和学习，但是拖延癌晚期让我直到今天才把博客建立好。我一直自认为是一个完美主义者，一次又一次的借着要做就要一次做到最好的心态，疯狂拖延各种事情，因此，导致的结果就是什么事也没有做，学习进度慢的要死，总是想得很多，做的却很少。今天借着这篇博文，也给自己定一个小目标，每周至少更新一次博客，一是为了改掉坏习惯，二来也起到一个监督作用，毕竟本人脸皮还是比较薄的。<br>&emsp;&emsp;说起建博客，还是有点小高兴的，仿佛回到了初中时代，那时候折腾QQ空间，为了一个好看的空间模板，一首免费的空间背景音乐，能折腾到半夜。在建博客的过程中，我遇到了很多问题，基本是不停的靠浏览器的搜索才完成的，虽然现在也只是个半成品，但是感觉收获还是很大的，仿佛那种折腾劲又回来了。确实，在学习编程而言，也是要不断折腾的，只有在不断的试错中才能进步。<br>&emsp;&emsp;时间过得很快，从考研复试结束到现在已经过去四个月了，九月份开始，我将步入一段新的旅程。回顾整个大学生活，感觉是我的一段屈辱史。由于填报志愿的失误，导致我以较高的分数进入我所在的大学读书，大一一开始就感觉自己是天之骄子，只是一个小失误才到这里来的，所以“高高在上”不屑于这，不屑于那，现在想来真是可笑。所以后来被转入比较差的专业，也算是为自己的莫名其妙的膨胀所付出的代价吧。还好最后改过自新，研究生跨考到自己比较喜欢的专业，所以，接下来的三年，我会把握住的，毕竟我还是有个小目标的。<br>&emsp;&emsp;罗里吧嗦写了这么多，算是给开博客留个纪念吧，以后想到什么再说吧。（事实证明，想要一次做到完美是不可能的，这篇文章写出来的效果和我心中所想的，差的不是一点，就这样吧，毕竟这篇不是重点）  </p>
+        <h3 id="对美国波士顿地区房价数据进行预处理"><a href="#对美国波士顿地区房价数据进行预处理" class="headerlink" title="对美国波士顿地区房价数据进行预处理"></a>对美国波士顿地区房价数据进行预处理</h3><pre><code class="Python"><span class="comment"># 从sklearn.datasets导入波士顿房价数据读取器</span>
+<span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_boston
+<span class="comment"># 从读取房价数据存储在变量boston中</span>
+boston = load_boston()
+<span class="comment"># 输出数据描述</span>
+<span class="keyword">print</span> boston.DESCR
+</code></pre>
+<a id="more"></a>
+<pre><code class="python"><span class="comment"># 从sklearn.model导入数据分割器</span>
+<span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split
+<span class="comment"># 导入numpy并重命名为np</span>
+<span class="keyword">import</span> numpy <span class="keyword">as</span> np
+
+X = boston.data
+y = boston.target
+
+<span class="comment"># 随机采样25%的数据构建测试样本,其余作为训练样本</span>
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=<span class="number">33</span>, test_size=<span class="number">0.25</span>)
+
+<span class="comment"># 分析回归目标值的差异</span>
+<span class="keyword">print</span> <span class="string">'The max target value is'</span>, np.max(boston.target)
+<span class="keyword">print</span> <span class="string">'The min target value is'</span>, np.min(boston.target)
+<span class="keyword">print</span> <span class="string">'The average target value is'</span>, np.mean(boston.target)
+
+<span class="comment"># 从sklearn.preprocessing导入数据标准化模块</span>
+<span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler
+<span class="comment"># 分别初始化对特征和目标值的标准化器</span>
+ss_X = StandardScaler()
+ss_y = StandardScaler()
+
+<span class="comment"># 分别对训练和测试数据的特征以及目标值进行标准化处理</span>
+X_train = ss_X.fit_transform(X_train)
+X_test = ss_X.transform(X_test)
+
+y_train = ss_y.fit_transform(y_train)
+y_test = ss_y.transform(y_test)
+</code></pre>
+<h3 id="使用两种不同配置的K近邻回归模型对美国波士顿房价数据进行回归预测"><a href="#使用两种不同配置的K近邻回归模型对美国波士顿房价数据进行回归预测" class="headerlink" title="使用两种不同配置的K近邻回归模型对美国波士顿房价数据进行回归预测"></a>使用两种不同配置的K近邻回归模型对美国波士顿房价数据进行回归预测</h3><pre><code class="Python">
+<span class="comment"># 从sklearn.neighbors导入KNeighborRegressor(K近邻回归器)</span>
+<span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsRegressor
+<span class="comment"># 初始化K近邻回归器,并且调整配置,使得预测的方式为平均回归:weights='uniform'</span>
+
+uni_knr = KNeighborsRegressor(weights=<span class="string">'uniform'</span>)
+uni_knr.fit(X_train, y_train)
+uni_knr_y_predict = uni_knr.predict(X_test)
+
+
+<span class="comment"># 初试化K近邻回归器,并且调整配置,使得预测的方式为根据距离加权回归:weights='distance'</span>
+dis_knr = KNeighborsRegressor(weights=<span class="string">'distance'</span>)
+dis_knr.fit(X_train, y_train)
+dis_knr_y_predict = dis_knr.predict(X_test)
+</code></pre>
+<h3 id="对两种不同配置的K近邻回归模型在美国波士顿房价数据上进行预测性能的评估"><a href="#对两种不同配置的K近邻回归模型在美国波士顿房价数据上进行预测性能的评估" class="headerlink" title="对两种不同配置的K近邻回归模型在美国波士顿房价数据上进行预测性能的评估"></a>对两种不同配置的K近邻回归模型在美国波士顿房价数据上进行预测性能的评估</h3><pre><code class="Python"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> r2_score, mean_absolute_error, mean_squared_error
+<span class="comment"># 使用R-squared、MSE以及MAE三种指标对平均回归配置的K近邻模型在测试集上进行性能评估。</span>
+<span class="keyword">print</span> <span class="string">'R-squared value of uniform-weighted KNeighorRegression:'</span>, uni_knr.score(X_test, y_test)
+<span class="keyword">print</span> <span class="string">'The mean squared error of uniform-weighted KNeighorRegression:'</span>, mean_squared_error(ss_y.inverse_transform(y_test), ss_y.inverse_transform(uni_knr_y_predict))
+<span class="keyword">print</span> <span class="string">'The mean absoluate error of uniform-weighted KNeighorRegression'</span>, mean_absolute_error(ss_y.inverse_transform(y_test), ss_y.inverse_transform(uni_knr_y_predict))
+
+<span class="comment"># 使用R-squared、MSE以及MAE三种指标对根据距离加权回归配置的K近邻模型在测试集上进行性能评估。</span>
+<span class="keyword">print</span> <span class="string">'R-squared value of distance-weighted KNeighorRegression:'</span>, dis_knr.score(X_test, y_test)
+<span class="keyword">print</span> <span class="string">'The mean squared error of distance-weighted KNeighorRegression:'</span>, mean_squared_error(ss_y.inverse_transform(y_test), ss_y.inverse_transform(dis_knr_y_predict))
+<span class="keyword">print</span> <span class="string">'The mean absoluate error of distance-weighted KNeighorRegression:'</span>, mean_absolute_error(ss_y.inverse_transform(y_test), ss_y.inverse_transform(dis_knr_y_predict))
+</code></pre>
+<h3 id="输出结果"><a href="#输出结果" class="headerlink" title="输出结果"></a>输出结果</h3><p><img src="https://i.imgur.com/5uA3Chs.png" alt=""></p>
 
       
     </div>
@@ -391,15 +456,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/09/16/使用三种不同核函数配置的支持向量机-回归-模型对美国波士顿地区房价进行预测/" rel="next" title="使用三种不同核函数配置的支持向量机(回归)模型对美国波士顿地区房价进行预测">
+                <i class="fa fa-chevron-left"></i> 使用三种不同核函数配置的支持向量机(回归)模型对美国波士顿地区房价进行预测
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/09/Linux下的系统编程与网络编程大纲/" rel="prev" title="Linux下的系统编程与网络编程大纲">
-                Linux下的系统编程与网络编程大纲 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,8 +516,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://oucdo9a26.bkt.clouddn.com/rBACE1I612iSRZYoAAAptjyOos8950_200x200_3.jpg"
@@ -518,6 +592,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#对美国波士顿地区房价数据进行预处理"><span class="nav-number">1.</span> <span class="nav-text">对美国波士顿地区房价数据进行预处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用两种不同配置的K近邻回归模型对美国波士顿房价数据进行回归预测"><span class="nav-number">2.</span> <span class="nav-text">使用两种不同配置的K近邻回归模型对美国波士顿房价数据进行回归预测</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对两种不同配置的K近邻回归模型在美国波士顿房价数据上进行预测性能的评估"><span class="nav-number">3.</span> <span class="nav-text">对两种不同配置的K近邻回归模型在美国波士顿房价数据上进行预测性能的评估</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出结果"><span class="nav-number">4.</span> <span class="nav-text">输出结果</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
